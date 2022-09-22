@@ -1,0 +1,13 @@
+@url=http://localhost:3000/api/v1
+
+### list of todos
+GET {{url}}/todos
+
+### create todo
+POST {{url}}/todos
+Content-Type: application/json
+
+{
+  "task": "Estudiar React",
+  "isDone": 1
+}
