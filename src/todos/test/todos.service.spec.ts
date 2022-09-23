@@ -1,11 +1,11 @@
-import { UpdateTodoDto } from './dto/update-todo.dto';
-import { CreateTodoDto } from './dto/create-todo.dto';
+import { UpdateTodoDto } from '../dto/update-todo.dto';
+import { CreateTodoDto } from '../dto/create-todo.dto';
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Repository } from 'typeorm';
 import { getRepositoryToken } from '@nestjs/typeorm';
-import { TodoEntity } from './entities/todo.entity';
-import { TodosService } from './todos.service';
+import { TodoEntity } from '../entities/todo.entity';
+import { TodosService } from '../todos.service';
 
 const todoEntityList: TodoEntity[] = [
   new TodoEntity({ id: '1', task: 'task-1', isDone: 0 }),

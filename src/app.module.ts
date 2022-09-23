@@ -16,7 +16,11 @@ import { TodosModule } from './todos/todos.module';
     //   synchronize: true,
     // }),
     TypeOrmModule.forRootAsync({
-      imports: [ConfigModule],
+      imports: [
+        ConfigModule.forRoot({
+          isGlobal: true,
+        }),
+      ],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         type: 'mariadb',

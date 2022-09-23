@@ -11,3 +11,6 @@ Content-Type: application/json
   "task": "Estudiar React",
   "isDone": 1
 }
+
+### list todos fake
+GET {{url}}/todosfake
